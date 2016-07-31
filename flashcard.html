@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Meta Data For Search Engines-->
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Alphabet Learning Application">
+  <meta name="keywords" content="Alphabet, Arabic, English, Hindi, Japanese, Korean, Malayalam, Russian">
+  <meta name="author" content="Elvin Samuel">
+  <!-- =================== Let's Get the Favicon In There =================== -->
+  <link rel="shortcut icon" type="image/png" href="/flashcardIcon.png" />
+  <!-- Title Of The Tab When The User Accesses The Page-->
+  <title>The Alphabet FlashCard App</title>
+  </head>
+
+  <body>
+    <!--Using a canvas for each of the fields.-->
+    <div class="topRowStuff">
+      <h1>Choose A Target Language, Applied Language, and Get Started.</h1>
+        <canvas id="char" width="1000" height="800" style="border:5px solid #AABBCC;">
+        Currently your browser does not support the HTML5 canvas tag.
+        Consider upgrading or using a different browser for this app. Thanks.
+        </canvas>
+      
+        <canvas id="menu" width="400" height="800" style="border:2px solid #AABBCC">
+          (See field left)
+        </canvas>
+    </div>
+    
+    <div class="bottomRowStuff">
+      <canvas id="choices" width = "1000" height="100" style="border:2px solid #000000;">
+        (See field above)
+      </canvas>
+    </div>
+    
+  <!--Our JS Script Is All Here-->
+  <script href="../js/flashcard.js"></script>
+  </body>
+</html>

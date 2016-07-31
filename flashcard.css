@@ -1,0 +1,16 @@
+/*
+Let's make the app handsome.
+*/
+.topRowStuff {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.bottomRowStuff {
+  background-color: rgb(0,0,0);
+  color: #FFFFFF;
+  margin: 5px;
+  padding: 20px;
+}
