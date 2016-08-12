@@ -13,26 +13,42 @@
   </head>
 
   <body>
-    <!--Using a canvas for each of the fields.-->
-    <div class="topRowStuff">
-      <h1>Choose A Target Language, Applied Language, and Get Started.</h1>
-        <canvas id="char" width="1000" height="800" style="border:5px solid #AABBCC;">
-        Currently your browser does not support the HTML5 canvas tag.
-        Consider upgrading or using a different browser for this app. Thanks.
-        </canvas>
-      
-        <canvas id="menu" width="400" height="800" style="border:2px solid #AABBCC">
-          (See field left)
-        </canvas>
+    <div id="top">
+      <header>
+        <h1> The Lingo App</h1>
+      </header>
+      <nav>
+        <ul id="topnav" style="list-style-type:none">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Other</a></li>
+          <li><a href="#">Once You're Done...</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <div class="bottomRowStuff">
-      <canvas id="choices" width = "1000" height="100" style="border:2px solid #000000;">
-        (See field above)
-      </canvas>
+  
+    <div>
+      <h1>Welcome To The Lingo App!</h1>
+      <h2>I'm Here To Teach You The Basics Of Any Language: The Alphabet!</h2>
+      <h3>How? Through Repetition Of Course!</h3>
+      <h2>We Have So Much To Show You</h2>
+      <h3>We Have 7 Languages Total Right Now, But We We're Always Expanding.</h3>
     </div>
-    
-  <!--Our JS Script Is All Here-->
-  <script href="../js/flashcard.js"></script>
+  
+    <!-- <div id="singleScreen">
+  <canvas class="screen" width="400" height="200" style="border:1px solid #000000"></canvas>
+  </div> -->
+  
+    <div id="multiScreen">
+      <canvas id="letterScreen" class="screen mainScreen" width="200" height="200" style="border:1px solid #000000"></canvas>
+      <canvas id="targetScreen" class="screen sideScreen" width="200" height="80" style="border:1px solid #000000"></canvas>
+      <canvas id="nativeScreen" class="screen sideScreen" width="200" height="80" style="border:1px solid #000000"></canvas>
+      <canvas id="choicesScreen" class="screen bottomScreen" width="200" height="60" style="border:1px solid #000000"></canvas>
+    </div>
+  
+    <div id="bottom">
+      <footer>Copyright &copy; Elvin Samuel</footer>
+    </div>
+    <!--Our JS Script Is All Here-->
+    <script href="../js/flashcard.js"></script>
   </body>
 </html>
